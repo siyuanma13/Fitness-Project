@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBqldJgk3nlo-4kBfe_1kj-K6S31nZoJ8&libraries=places&callback=getPos"
+    async defer></script>
+  </head>
+
+<style>
+.fade-in{
+  -webkit-animation: fadein 10s;
+  -moz-animation: fadein 10s;
+  
+}
+
+@-webkit-keyframes fadein{
+  from {opacity:0}
+  to {opacity:1}
+}
+@-moz-keyframes fadein{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+
+.color-red{
+  background-color:red;
+}
+.slide-count{
+  position:absolute;
+  bottom:5%;
+  left:50%;
+}
+
+.panel-padding{
+  padding:70px;
+}
+.powderblue {background-color: #1E90FF;}
+.white{background-color:white;}
+.cursive {
+  font-family: "Tangerine", serif;
+}
+.img-fluid{
+
+  height:400px;
+}
+
+#Introduction{
+}
+
+.move-text-class{
+  vertical-align: sub;
+}
+.FY-quote{
+  padding-top:80px;
+}
+
+#Slideshow{
+  background-color:white;
+  position:relative;
+}
+
+#TDE-Calculator{
+  background-color: rgba(211,211,211);
+}
+
+#Conclusion{
+  background:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url("https://marketingland.com/wp-content/ml-loads/2014/07/reddit-combo-1920.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:400px;
+}
+
+#About{
+  background-color:#000080;
+}
+
+#gym-Map{
+  background-color: #F5F5DC;
+}
+
+#map{
+  height:300px;
+  width:100%;
+  margin:10px;
+}
+
+
+
+.map-Height {
+  height:320px;
+  
+}
+
+
+.progressive-overload-pic{
+  width:100%;
+}
+
+
+
+.panel-1{
+  position:relative;
+  background:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url("https://rippedbody.com/wp-content/uploads/2014/04/Progressive-Overload-Greek-RippedBody.com_.jpg");
+  
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  height:500px;
+  opacity:1;
+  
+
+}
+
+.panel-2{
+  position:relative;
+  background-color:	#CD5C5C;
+  height:500px;
+}
+
+.panel-3{
+  position:relative;
+  background-color:	#00FFFF;
+  height:500px;
+}
+
+.panel-4{
+  position:relative;
+  background-color:	#FFF8DC;
+  height:500px;
+}
+
+.panel-5{
+  position:relative;
+  background-color:	black;
+  height:500px;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  
+  position:absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next{
+  right:0px;
+}
+
+.prev:hover, .next:hover {
+  background-color:black;
+  opacity:.5;
+}
+
+</style>
+
+  
+
+<main class = "powderblue">
+  
+  <section id = "Title">
+    <div class = "container">
+      <div class = "row pt-5">
+        <div class = "col-md-6 text-white">
+          <h1 class = "display-1">
+            Basic Bodybuilding
+          </h1>
+          <h1 class = "cursive pl-5">
+            A basic bodybuilding program for the aspiring meat head
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section id = "Introduction" class ="white">
+    <div class = "container intro-container-size">
+      <div class = "row no-gutters justify-content-end intro-row-size pb-5">
+        <div class = "col-md-6 col-12 text-center">
+    <img src="https://secure.img1-fg.wfcdn.com/im/99056116/resize-h800%5Ecompr-r85/3486/34869353/Bannon+Hourglass.jpg" class="img-fluid pt-5" alt="Responsive image">
+        </div>
+        <div class = "col-md-6 col-12">
+          <h4 class="FY-quote">"Bodybuilding isn't a competition against others. It also isn't a competition against yourself. Bodybuilding is a competition against time"     
+           <div class = "text-right">
+             <h6>(I dont like/support <a href =   "https://www.instagram.com/being_frank_yang/?hl=en" target = "_blank">Frank Yang</a>, but it's his quote)                  </h6>   
+          </div>
+          </h4>
+          
+          <h6 class = "pt-5">
+            Bodybuilding is one of the most honest things in life. If you put in the effort, there is a 100% chance you will see returns. 
+          </h6>
+          <h6 class = "pt-3">
+            I have put together a <strong>neat little slideshow</strong> below  that serves as a tidy little introduction to the science and methodology of bodybuilding. Enjoy! 
+          </h6>
+        </div>
+      </div>  
+    </div>
+</section>
+
+<section id="Slideshow">
+  <div class = "slideshow-container">
+    
+    
+    <div class = "panel">
+      <div class="row panel-1">
+      <div class="panel-padding">
+        <h2>
+          Definition 1: Progressive Overload
+        </h2>
+      <h4 class-"pt-2">
+      Legend has it that in ancient Greece, a young wrestler carried up a baby calf up a mountain every day for 3 years. As the cow grew, the wrestler grew as well. </h4>
+      <h6 class="pt-2">
+        While simple, this is the foundation of all strength and physique training--Start off light and gradually improve. Your body will naturally adjust and adapt to the steady increase in load.
+      </h6>
+       </div>
+        <div class="slide-count">
+          1/5
+        </div>
+      </div>
+    </div>
+    
+    <div class = "panel">
+      <div class ="row panel-2">
+        <div class="panel-padding text-white">
+        <h2>
+          Definition 2: Hypertrophy
+        </h2>
+        <h4 class="pt-2">
+          Muscle Hypertrophy is the growth of skeletal muscle through the growth the the cells. When we lift weights, we produce microfissures in our skeletal muscle that our body repairs after the workout. This is what causes us to grow. I like to think of bodybuilding as a cycle of creating little holes in the muscle, our body then fills in. 
+        </h4>
+        <h4 class = "pt-4">
+          Training and Recovery. Effort and Nutrition. Both of these components are equally important in developing a great physique. 
+        </h4>
+        </div>
+        <div class="slide-count">
+          2/5
+        </div>
+      </div>
+    </div>
+    
+    <div class = "panel">
+      <div class = "panel-3">
+        <div class = "panel-padding ">
+          <h2>
+            Definition 3: Total Daily Energy Expenditure (TDEE) 
+          </h2>
+          <h4 class = "pt-4">
+            This is how many calories it takes you to get through your normal day. Brushing your teeth, going to work, walking to the post office, etc. all cost a degree of energy, quantified by a number of calories.
+          </h4>
+          <h4 class = "pt-4">
+            To gain muscle, we must be intaking more calories on a daily basis than we need.
+          </h4>
+          <h4 class ="pt-4">
+            As a general rule of thumb, to gain muscle, eat your 1 gram of protein for every 1 lb of bodyweight, and eat 500 calories more than your Total Daily Energy Expenditure.
+          </h4>
+        </div>
+        <div class = "slide-count">
+          3/5
+        </div>
+      </div>
+    </div>
+    
+    <div class = "panel">
+      <div class = "row panel-4">
+        <div class = "panel-padding">
+          <h2>
+            Example:
+          </h2>
+          <h4 class ="pt-4">
+          Bob is an average guy who wants to start gaining muscle. He first needs finds his TDE by tracking how many calories he normally eats every day, for 2 weeks.
+          </h4>
+          <h4 class = "pt-4">
+          Assuming his weight doesn't fluctuate during this 2 week period, his TDEE is the average calories/day of those 14 days. Bob adjust his caloric intake so that he now eats 1 gram protein/1 lb bodyweight, and so his total calories is his TDE+500.
+          </h4>
+          
+          <h4 class = "pt-4">
+            <strong>TDEE</strong>: 2000 calories <strong>Bodyweight</strong>: 160lbs
+          </h4>
+          <h5>
+            Goal Daily Intake: 2500 calories, 160 grams of protein
+          </h5>  
+        </div>
+        <div class = "slide-count">
+          4/5
+        </div>
+      </div>
+    </div>
+    
+    <div class = " panel">
+      <div class = "row panel-5 align-items-center text-white">
+        <div class = "d-flex col-12 justify-content-center">
+          <div class = "panel-padding">
+          <h2 class = "pt-4 ">
+          That's it. Now all Bob has to do is train. 
+          </h2>
+          <h5 class ="pt-2">
+           Non-professional bodybuilding is incredibly simple. Lift weights, eat more than you need, and you will grow. 
+          </h5>
+          <h5 class ="pt-2">
+            I have provided a TDEE calculator and a basic workout routine below to get you started. 
+          </h5>
+          <h5 class = "pt-5">
+            Have fun!
+          </h5>
+          </div>
+        </div>
+        <div class = "slide-count text-white">
+            5/5
+        </div>
+      </div>
+    </div>
+<a class="prev" id = "prev" onclick="plusSlides(-1)">&#60;</a>
+<a class="next" id = "next" onclick="plusSlides(1)">&#62;</a>
+  </div>
+</section>
+
+<section id="TDE-Calculator">
+  <div class = "container">
+    <div class = "row align-items-center">
+      <div class = "col-12">
+       <h1 class="text-center pt-5">
+         TDEE Calculator*
+       </h1>
+        <h3 class = "text-center">
+          Adjust the parameters to best match you, and we will do the rest. 
+        </h3>
+      </div>
+    </div>
+    <div style = "background-color: white" class ="row p-3">
+      <div class = "col-md-6 col-12">
+      <form>
+        <h4>
+          Height
+        </h4>
+        <select id = "height">
+          <option value = "65">5'5"</option>
+          <option value = "66">5'6"</option>
+          <option value = "67">5'7"</option>
+          <option value = "68">5'8"</option>
+          <option value = "69">5'9"</option>
+          <option value = "70">5'10"</option>
+          <option value = "71">5'11"</option>
+          <option value = "72">6'0"</option>
+          <option value = "73">6'1"</option>
+          <option value = "74">6'2"</option>
+          <option value = "75">6'3"</option>
+        </select>
+        
+       
+        <h4 class = "pt-2">
+          Work Activity Level
+        </h4>
+          <div id = "Daily-Activity" class ="pb-3">
+            <input type = "radio" name = "activity-option" value = "low" checked>&nbsp Low (think: Office Job)<br>
+            <input type = "radio" name = "activity-option" value = "medium">&nbsp Medium (think: Elementary School Teacher)<br>
+            <input type = "radio" name = "activity-option" value = "high">&nbsp High (think: Construction)
+         </div>
+
+        
+        
+     
+      </div>
+      
+      <div class = "col-md-6 col-12">
+        
+        <h4>
+          Gender
+        </h4>
+        <div id = "Gender-Selection" class ="pb-3">
+          <input type = "radio" name = "gender-option" value = "male" checked> &nbsp male <br>
+          <input type = "radio" name = "gender-option" value = "female"> &nbsp female <br>
+        </div>
+        
+        <h4>
+          Age
+        </h4>
+        <div id = "age-response" class = "text-danger">
+        </div>
+        <div>
+          <input type = "text" id = "age-option" value="">
+        </div>
+      </div>
+     </form>
+ 
+    </div>
+    
+    <div style = "background-color:white" class = "row p-3">
+        <div class = "col text-center">
+          <button type = "button" class = "btn btn-success" onclick="calculateTDE()">Calculate TDE</button>
+        </div>
+    </div>
+    
+    <div style = "background-color: white" class = "row p-1">
+      <div class = "col">
+        <h3 class = "text-center ">
+          Total Daily Energy Expenditure = <span id = "calculated-result"></span>
+        </h3>
+      </div>
+    </div>
+        
+        
+    <div class = "p-2">
+      *DISLCAIMER: The best way to calculate TDE is to track your calorie intake for 2 weeks, and average it out. However, the calculator provided can give you a ballpark estimate.  
+    </div>
+  </div>
+</section>
+  
+<section id="gym-Map">
+  
+  
+  <div class = "container">
+    <div class ="row align-items-center">
+      <div class = "col-md-6 col-12 text-center">
+        <div class = "display-2">
+          Find a Gym! 
+        </div>
+      </div>
+      <div class = "col-md-6 col-12 map-Height">
+        
+        <div id = "map" class = "p-5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section id = "Conclusion">
+  <div class = "container">
+    <div style="height:400px" class = "row align-items-center justify-content-center">
+      <div class = "col text-center">
+        <div class = "p-1">
+        <h1>The last thing to do, of course, is to train.</h1>
+        <h3 class = "p-3"> Reddit has some great online programs, written by people who have been doing this a lot longer than I have. Any of the programs in the <a href="https://www.reddit.com/r/Fitness/wiki/programs#wiki_general_aesthetics" target="_blank">General Aesthetics</a> section on this Reddit page will work, as long as you stick to it. 
+        </h3>
+        <h3 class = "p-3">
+          Good Luck!
+        </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section id = "About">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-md-6 col-12 text-white">
+        <div class = "p-3">
+          ABOUT
+        </div>
+        <div class = "p-3">
+          I am an aspiring software developer who enjoys bodybuilding as much as website building. I have been bodybuilding for 4 years, and I love steering new bodybuilders in the right direction. If you have any questions, feel free to shoot me an email at siyuanm@yahoo.com.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+</main>
+
+<script>
+//used for slideshow
+let slideIndex = 0;
+let slideArray = document.getElementsByClassName("panel");
+let prev = document.getElementById("prev");
+let next = document.getElementById("next");
+showSlides(slideIndex);
+
+function plusSlides(toAdd){
+ 
+  slideIndex+=toAdd;
+  if (slideIndex>=slideArray.length){
+    slideIndex=0;
+  }
+  else if (slideIndex<0) {
+    slideIndex = slideArray.length-1;
+  }
+  
+  showSlides(slideIndex);
+}
+
+function showSlides(slideNum){
+
+   prev.style.backgroundColor="initial";
+    next.style.backgroundColor="initial";
+  for (let i =0; i<slideArray.length; i++){
+    slideArray[i].style.display="none";
+  }
+  slideArray[slideNum].style.display="block";
+  if (slideNum==4){
+  
+    prev.style.backgroundColor="rgba(255,255,255, 0.4)";
+    next.style.backgroundColor="rgba(255,255,255, 0.4)";
+  }
+}
+//end of script for slideshow
+
+
+//Json Object used to calculate TDE
+let parameters = {
+  Age:{ //Age 10-25, 26-40, 41+
+    young:200,
+    middle:100,
+    elder:0
+  },
+  WAL:{ //Work Activity Level
+    low:0,
+    medium:50,
+    high:100
+  },
+  Gender:{//Gender
+    male:100,
+    female:0
+  }
+  //Height is taken care of in calculateTDE function directly
+}
+
+//calculateTDE();
+function calculateTDE(){
+  let age = ageFactor();
+  if (isNaN(age)||(age>70)||(age<10)){
+     document.getElementById("age-response").innerHTML = "please enter in a number between 10-70";
+    
+    return; 
+  }
+  else {
+    document.getElementById("age-response").innerHTML = "";
+  }
+  let ageParam;
+  if (age<=25){
+    ageParam = "young";
+  }
+  else if (age<=40){
+    ageParam = "middle";
+  }
+  else{
+    ageParam = "elder";
+  }
+  let ageAdd = parameters.Age[ageParam];
+   
+  
+  let height = heightFactor();
+  let heightAdd = (1.0*(10-(75-height))/10) *200;
+
+  
+  let workLevel = radioButtonCalc("activity-option");
+  let workAdd = parameters.WAL[workLevel];
+ 
+  
+  let gender = radioButtonCalc("gender-option");
+  let genderAdd = parameters.Gender[gender];
+
+  
+  //Now we have our 4 factors. We should calculate a TDE factor
+  
+  //for now, lets just add them up
+  //remove display, so we can fade into after calculation
+  let calc= document.getElementById("calculated-result");
+  //calc.classList.remove("fade-in");
+  //with 1700 as base calories
+  let total = 1700 +Number(ageAdd)+Number(heightAdd)+Number(genderAdd)+Number(workAdd);
+  calc.innerHTML=total + " calories/day";
+  //calc.classList.add("fade-in");
+  
+}
+
+function heightFactor(){
+  let heightArray = document.getElementById("height").options;
+  let heightInInches = heightArray[heightArray.selectedIndex].value;
+  return heightInInches;
+}
+
+function ageFactor(){
+  
+  let ageVal = document.getElementById("age-option").value;
+  return ageVal;
+  
+  //Parse weightVal
+  //display input to be invalid if not valid
+ 
+}
+
+function radioButtonCalc(nameText){
+  let workArray = document.getElementsByName(nameText);
+  
+  let workLevel;
+  for (let i = 0; i<workArray.length; i++){
+    if (workArray[i].checked){
+      workLevel = workArray[i].value;
+    }
+  }
+  return workLevel;
+}
+
+
+
+//For Google Maps: 
+function getPos(){
+
+  if (navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(success, failure)
+  }
+}
+let map;
+function success(position){
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+ 
+  map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: latitude, lng: longitude},
+          zoom: 15
+        });
+  
+  
+  //Find gyms nearby
+  infowindow = new google.maps.InfoWindow();
+  let service = new google.maps.places.PlacesService(map);
+  service.nearbySearch({
+    location: {lat: latitude, lng: longitude},
+    radius: 5000,
+    type: ['gym']
+  }, places);
+
+}
+
+//Add gym markers to map
+function places(results, status){
+  if (status === google.maps.places.PlacesServiceStatus.OK){
+    for (let i = 0; i <results.length; i++){
+      createMarker(results[i]);
+    }
+  }
+}
+
+//creates a marker 
+function createMarker(place){
+  let placeLoc = place.geometry.location;
+  let marker = new google.maps.Marker({
+    map: map,
+    position: placeLoc
+  });
+  
+  google.maps.event.addListener(marker, 'click', function(){
+    infowindow.setContent(place.name);
+    infowindow.open(map, marker);
+  })
+}
+
+function failure(err){
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+
+</script>
+
+
+  
