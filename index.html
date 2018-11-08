@@ -45,12 +45,9 @@
   font-family: "Tangerine", serif;
 }
 .img-fluid{
-
   height:400px;
 }
 
-#Introduction{
-}
 
 .move-text-class{
   vertical-align: sub;
@@ -102,7 +99,11 @@
   width:100%;
 }
 
-
+.panel-0{
+  position:relative;
+  background-color:	black;
+  height:500px;
+}
 
 .panel-1{
   position:relative;
@@ -211,7 +212,19 @@
 
 <section id="Slideshow">
   <div class = "slideshow-container">
-    
+     
+
+    <div class = "panel">
+      <div class = "row panel-0 align-items-center">
+        <div class = "panel-padding">
+           <div class = "col text-center">
+          <h2 class = "text-white">
+            Click through this slideshow to see the science behind bodybuilding!
+          </h2>
+           </div>
+        </div>
+      </div>
+    </div>
     
     <div class = "panel">
       <div class="row panel-1">
@@ -499,7 +512,7 @@ function showSlides(slideNum){
     slideArray[i].style.display="none";
   }
   slideArray[slideNum].style.display="block";
-  if (slideNum==4){
+  if (slideNum==5 || slideNum==0){
   
     prev.style.backgroundColor="rgba(255,255,255, 0.4)";
     next.style.backgroundColor="rgba(255,255,255, 0.4)";
